@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" 
+      type="image/png" 
+      href="./favicon.ico">
+    {{> global-includes }}
+    <meta charset="utf-8">
+    <title>{{ pageTitle }}</title>
+</head>
+<body>
+    {{> nav/nav }}
+    
+    <main class="container">
+        {{{body}}}
+    </main>
+    
+    <footer class="container">
+        {{>footer}}
+    </footer>
+    
+</body>
+</html>

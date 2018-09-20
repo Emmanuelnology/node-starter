@@ -1,0 +1,29 @@
+{
+	"routes": {
+		"home": {
+            "url": "/",
+            "view": "home",
+            "options": {
+                "pageTitle":"Main"
+            }
+        },
+
+        "animals": {
+            "url": "/animals",
+            "view": "animals",
+            "options": {
+                "pageTitle":"Look, animals!"
+                }
+            
+        },
+
+        "Page not found": {
+            "url": "*",
+            "view": "404",
+            "options": {
+                "pageTitle":"Page not found!",
+                "layout":"error"
+            }
+		}
+	}
+}
