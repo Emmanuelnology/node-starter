@@ -7,7 +7,8 @@
     "start": "nodemon dist/server.js",
     "prestart": "npm run build",
     "build": "tsc",
-    "dev-osx": "rm -rf dist/* && tsc && concurrently --kill-others \"tsc --watch\" \"nodemon dist/server.js\""
+    "dev-osx": "rm -rf dist/* && tsc && concurrently --kill-others \"tsc --watch\" \"nodemon dist/server.js\"",
+    "scss": "node-sass --watch assets/scss -o assets/css"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +16,7 @@
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
     "moment": "^2.22.2",
+    "node-sass": "^4.9.3",
     "typescript": "^3.0.3"
   },
   "devDependencies": {

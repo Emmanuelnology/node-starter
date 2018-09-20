@@ -1,24 +1,44 @@
-
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <div class="container">
-          <h1 class="display-3">Hello, world!</h1>
-          <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-        </div>
-      </div>
-
-      <div class="container">
-        <!-- Example row of columns -->
-        <div class="row">
-          {{> home-heading headline='Headline A'}}
-            {{> home-heading headline='Headline B'}}
-          {{> home-heading headline='Headline C'}}
-
-        </div>
-
-        <hr>
-
-      </div> <!-- /container -->
-
-   
+<div class="row">
+    <div class="col-md-12">
+        {{> jumbotron 
+            jumbotron-title = "Build a Node Website with a Bootstrap"
+            jumbotron-image = "http://backgroundcheckall.com/wp-content/uploads/2017/12/jumbotron-background-image-6.jpg"
+            jumbotron-text = "Use Bootstrap and Material design together to build websites quickly and easily."
+            jumbotron-link = "https://mdbootstrap.com/"
+            jumbotron-button-text = "View documentation"
+            jumbotron-newpage = false
+        }}
+    </div>
+</div>
+<div class="row p-5">
+<div class="col-sm-4 m-2 m-sm-0">
+    {{> card
+        card-id = "card1"
+        card-title = "Title 1"
+        card-image = "https://images.pexels.com/photos/63324/california-road-highway-mountains-63324.jpeg?auto=compress&cs=tinysrgb&h=350"
+        card-image-alt = "Alt 1"
+        card-text = "Example text 1"
+        card-button-text = "Click 1"
+    }}
+</div>
+<div class="col-sm-4 m-2 m-sm-0">
+    {{> card
+        card-id = "card2"
+        card-title = "Title 2"
+        card-image = "https://www.infoplease.com/sites/infoplease.com/files/inline-images/mount_everest_650.jpg"
+        card-image-alt = "Alt 2"
+        card-text = "Example text 2"
+        card-button-text = "Click 2"
+    }}
+</div>
+<div class="col-sm-4 m-2 m-sm-0">
+    {{> card
+        card-id = "card3"
+        card-title = "Title 3"
+        card-image = "http://www.visitgreece.gr/deployedFiles/StaticFiles/Photos/Generic%20Contents/Forests/mountains_2_560.jpg"
+        card-image-alt = "Alt 3"
+        card-text = "Example text 3"
+        card-button-text = "Click 3"
+    }}
+</div>
+</div>

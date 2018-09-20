@@ -8,14 +8,6 @@
             }
         },
 
-        "animals": {
-            "url": "/animals",
-            "view": "animals",
-            "options": {
-                "pageTitle":"Look, animals!"
-                }
-            
-        },
 
         "Page not found": {
             "url": "*",

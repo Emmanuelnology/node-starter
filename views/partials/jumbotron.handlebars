@@ -1,0 +1,17 @@
+<!--
+    jumbotron-title = "Build a Node Website with a Bootstrap"
+    jumbotron-text = "Use Bootstrap and Material design together to build websites quickly and easily."
+    jumbotron-link = "https://mdbootstrap.com/"
+    jumbotron-button-text = "View documentation"
+    jumbotron-newpage = false 
+-->
+
+<div class="card card-image" style="background-image: url({{jumbotron-image}});">
+            <div class="text-white text-center py-5 px-4 my-5">
+                <div>
+                    <h1 class="card-title pt-3 mb-5 font-bold"><strong>{{jumbotron-title}}</strong></h1>
+                    <p class="mx-5 mb-5">{{jumbotron-text}}</p>
+                    <a class="btn btn-outline-white btn-rounded" href="{{jumbotron-link}}" {{#if jumbotron-newpage }}target="_blank"{{/if}}><i class="fa fa-clone left"></i> {{jumbotron-button-text}}</a>
+                </div>
+            </div>
+        </div>
