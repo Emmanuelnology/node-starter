@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - "8"
+dist: trusty
+
+sudo: enabled
+
+before_install:
+- npm install -g htmllint-cli
+
+cache:
+  directories:
+    - node_modules
+
+script:
+  - npm run lint
+  - npm run build
+
+notifications:
+  slack: nology-uk:je0I2B8Zeu6UZTn3HwEGXNjd
