@@ -5,6 +5,7 @@
   "main": "dist/server.js",
   "scripts": {
     "start": "nodemon dist/server.js",
+    "lint": "htmllint **/*.handlebars",
     "prestart": "npm run build",
     "build": "tsc",
     "dev-osx": "rm -rf dist/* && tsc && concurrently --kill-others \"tsc --watch\" \"nodemon dist/server.js\"",
